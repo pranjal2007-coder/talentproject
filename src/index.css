@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global font family and small helpers */
+:root {
+  --primary: #5b21b6;
+  --accent: #f97316;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Nunito', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Liberation Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+}
+
+/* small utility matching existing site */
+.text-primary { color: var(--primary); }
+.bg-primary { background-color: var(--primary); }
+.btn-accent { background-color: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 9999px; }
